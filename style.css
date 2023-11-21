@@ -1,55 +1,126 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-section{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  section header{
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    justify-content: center;    
+section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section header {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  justify-content: center;
+}
+section header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section header ul li {
+  list-style: none;
+  margin-left: 5px;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+section header ul li a {
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+section header ul li a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 60%;
+  color: #5f6368;
+}
+section header ul li button {
+  background-color: rgb(0, 255, 72);
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
-  }
-  section header ul{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
-  }
-  section header ul li{
-    list-style: none;
-    margin-left: 5px;
-    justify-content: space-between;
-    padding-right: 10px;
+section .main {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .main .google {
+  forced-color-adjust: none;
+  height: 250px;
+  margin: 30px 60px -80px 150px;
+}
+section .main .searchbox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+section .main .searchbox .search {
+  height: 100%;
+  width: 100%;
+  padding: 13px;
+  padding-left: 45px;
+  padding-right: 60px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: inherit;
+  padding-inline-start: 60px;
+  font-family: inherit;
+}
 
-  }
-  section header ul li a{
-    color:#111;
-    text-decoration: none;
-    font-size: 13px;
-  }
-  section header ul li a img{
-    width: 30px;
-    height: 30px;
-    border-radius: 60%;
-    color:#5f6368;
-  }
-  section header ul li button{
-    background-color: rgb(0, 255, 72);
-    border: none;
-    outline: none;
-    padding: 8px 14px;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+section .main .searchbox .icons {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  display: flex;
+  padding: 1px 10px;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  background-position: center;
+  background-size: 21px 21px;
+  background-repeat: no-repeat;
+  background-color: none;
+  right: 16px;
+}
+
+img.searchicon {
+  height: 50px;
+  left: 5px;
+}
+
+img.mic {
+  height: 50px;
+  right: 40px
+}
+img.lens {
+  height: 50px;
+  right:30px;
+}
+section .main .buttons {
+  margin-top: 20px;
+}
+section .main .buttons button {
+  margin: 0px 5px;
+  padding: 12px 20px;
+  color: #555;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px solid transparent;
+  outline: none;
+}
