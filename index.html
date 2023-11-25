@@ -7,19 +7,24 @@
     <title>Google</title>
   </head>
   <body>
-    <section>
+    <!-- Header -->
+    <section class="headerContainer">
       <header>
-        <ul>
+        <ul class="hearderListItem">
           <li><a href="#">Gmail</a></li>
           <li><a href="#">Images</a></li>
           <li>
-            <a href="#"> <img src="button.png" /></a>
+            <a href="#"> <img src="button.png" class="menuImg" /></a>
           </li>
           <li><button>Sign In</button></li>
         </ul>
       </header>
-      <div class="main">
-        <img src="google.png" class="google" alt="google" />
+    </section>
+    <!--Header end-->
+
+    <section class="mainContainer">
+      <div>
+        <img src="google.png" class="googleImg" alt="google" />
         <div class="searchbox">
           <input
             type="text"
@@ -27,16 +32,18 @@
             placeholder="Search Google or Type a URL"
           />
           <div class="icons">
-            <div><img src="search.png" class="searchicon" /></div>
-            <div><img src="mic.png" class="mic" /></div>
-            <div><img src="lens.png" class="lens" /></div>
+            <img src="search.png" class="searchicon" />
+            <div calss="button2">
+              <img src="mic.png" class="mic" />
+              <img src="lens.png" class="lens" />
+            </div>
           </div>
-          <div class="buttons">
-            <button>Google Search</button>
-            <button>I" Filing Lacky</button>
-          </div>
-          <div class="lang">Google Offered in <a href="#">Malay</a></div>
         </div>
+        <div class="buttons">
+          <button>Google Seach</button>
+          <button>I" Felling Lucky</button>
+        </div>
+        <div class="lang">Google Offered In <a href="#">Malay</a></div>
       </div>
     </section>
   </body>

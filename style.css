@@ -1,126 +1,116 @@
 body {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  padding-left: 500px;
 }
-section {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-section header {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  justify-content: center;
-}
-section header ul {
+
+.headerContainer {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 0%;
 }
-section header ul li {
+
+.hearderListItem {
+  display: flex;
+  gap: 20px;
+}
+ul {
   list-style: none;
-  margin-left: 5px;
-  justify-content: space-between;
-  padding-right: 10px;
-}
-section header ul li a {
-  color: #111;
+  margin-left: 20px;
   text-decoration: none;
-  font-size: 13px;
 }
-section header ul li a img {
-  width: 30px;
-  height: 30px;
-  border-radius: 60%;
-  color: #5f6368;
-}
-section header ul li button {
-  background-color: rgb(0, 255, 72);
+li button {
+  background-color: aquamarine;
   border: none;
   outline: none;
   padding: 8px 14px;
-  color: white;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-section .main {
+.menuImg {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+/* Center*/
+.mainContainer {
   width: 580px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-section .main .google {
+.googleImg {
   forced-color-adjust: none;
   height: 250px;
   margin: 30px 60px -80px 150px;
 }
-section .main .searchbox {
+
+.searchbox {
   position: relative;
   width: 100%;
   margin-top: 20px;
 }
-section .main .searchbox .search {
-  height: 100%;
+.search {
   width: 100%;
+  height: 100%;
   padding: 13px;
   padding-left: 45px;
-  padding-right: 60px;
+  border: 5px solid transparent;
+  outline-style: solid;
+  font-size: 16px;
   border-radius: 30px;
-  border: 1px solid #ccc;
-  outline: none;
-  font-size: inherit;
-  padding-inline-start: 60px;
-  font-family: inherit;
 }
-
-section .main .searchbox .icons {
+.searchicon {
+  width: 25px;
+  height: 30px;
+}
+.icons {
   position: absolute;
   top: 0%;
   width: 100%;
   display: flex;
-  padding: 1px 10px;
+  padding: 12px 20px;
   justify-content: space-between;
   align-items: center;
   pointer-events: none;
-  background-position: center;
-  background-size: 21px 21px;
-  background-repeat: no-repeat;
-  background-color: none;
-  right: 16px;
 }
-
-img.searchicon {
-  height: 50px;
-  left: 5px;
+.button2 {
+  right: 60px;
+  gap: 30px;
+  justify-content: flex-end;
 }
-
 img.mic {
-  height: 50px;
-  right: 40px
+  height: 30px;
+  right: 10px;
 }
 img.lens {
-  height: 50px;
-  right:30px;
+  height: 30px;
+  right: 20px;
 }
-section .main .buttons {
-  margin-top: 20px;
-}
-section .main .buttons button {
-  margin: 0px 5px;
-  padding: 12px 20px;
+.buttons {
+  margin: 0 200px;
+  padding: 22px 20px;
   color: #555;
   font-size: 14px;
   border: none;
   cursor: pointer;
-  border-radius: 1px solid transparent;
   outline: none;
+  justify-content: space-between;
+}
+.buttons:hover {
+  border-radius: 20px solid red;
+}
+.lang {
+  margin-top: 2px;
+  font-size: 20px;
+  padding: 1px 215px;
 }
