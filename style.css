@@ -2,7 +2,7 @@ body {
   padding: 0%;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  padding-left: 500px;
+  /* padding-left: 500px; */
 }
 
 .headerContainer {
@@ -42,6 +42,7 @@ li button {
 /* Center*/
 .mainContainer {
   width: 580px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +92,7 @@ img.lens {
   height: 30px;
   right: 20px;
 }
-.buttons {
+.buttonsContainer {
   margin: 0 200px;
   padding: 22px 20px;
   color: #555;
@@ -100,8 +101,10 @@ img.lens {
   cursor: pointer;
   outline: none;
 }
-.buttons:hover {
-  border-radius: 2px solid red;
+.btn-1:hover {
+  border: 2px solid red;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .lang {
   margin-top: 2px;
