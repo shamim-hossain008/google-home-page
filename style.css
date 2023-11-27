@@ -111,3 +111,8 @@ img.lens {
   font-size: 20px;
   padding: 1px 215px;
 }
+.btn-2:hover{
+  border: 2px solid red;
+  border-radius: 20px;
+  cursor: pointer;
+}
