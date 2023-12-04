@@ -111,8 +111,27 @@ img.lens {
   font-size: 20px;
   padding: 1px 215px;
 }
-.btn-2:hover{
+.btn-2:hover {
   border: 2px solid red;
   border-radius: 20px;
   cursor: pointer;
+}
+/* Mobile view */
+@media (max-width: 780px) {
+  .headerContainer {
+    width: fit-content;
+  }
+  ul {
+    margin-left: 320px;
+  }
+
+  .search {
+    width: 80%;
+  }
+  .icons {
+    width: 80%;
+  }
+  .searchbox {
+    padding-left: 39px;
+  }
 }
